@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@112.5,500&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Inconsolata", monospace; 
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+			font-weight: 700;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #5da75c;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="Sandbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Sandbox</a>
+		<a id="Work" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop-file"></i> Work</a>
+		<a id="My-People" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop-file"></i> My People</a>
+		<a id="Courses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Courses</a>
+		<a id="Assignment" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-award"></i> Assignment</a>
+		<a id="Media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-compact-disc"></i> Media</a>
+		<a id="Braindump" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> Braindump</a>
+		
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/nushybaka/HOME-3db98aa530e547039d4c0df02e4a3338?pvs=4", '_blank').focus();
+			else if (id == "Sandbox")
+				window.open("https://www.notion.so/nushybaka/Sandbox-0054248480154d808f95835969fc7924?pvs=4", '_blank').focus();
+			else if (id == "Work")
+				window.open("https://www.notion.so/nushybaka/Work-221a2aaba2c44a2ea99d25eaf52d6be2?pvs=4", '_blank').focus();
+
+			else if (id == "My-People")
+				window.open("https://www.notion.so/nushybaka/My-People-0a302862040040d1ad83ff24600ba294?pvs=4", '_blank').focus();
+
+
+			else if (id == "Courses")
+				window.open("https://www.notion.so/nushybaka/Learning-Dashboard-db2a815a901b4e6ea0ca81b418c586ae?pvs=4", '_blank').focus();
+
+			else if (id == "Assignment")
+			window.open("https://www.notion.so/nushybaka/Assignments-4d042b852f114a2ab983065553e83c66?pvs=4", '_blank').focus();
+			else if (id == "Media")
+			window.open("https://www.notion.so/nushybaka/Media-904823f6341048de886681f48fd42bdb?pvs=4", '_blank').focus();
+
+			else if (id == "Braindump")
+				window.open("https://www.notion.so/nushybaka/Braindump-bd437397f99a454cb38f7c654ea85c6a?pvs=4", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
